@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="prog.js"defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calcular custos</h1>
+
+    <h2>Calcular valor da cápsula</h2>
+
+    <label for="raio">Digite o valor do raio</label><br>
+    <input type="number" id="raio"><br><br>
+
+    <hr>
+    
+    <h2>Calcular valor do tanque</h2>
+    
+    <label for="largura">Digite o valor da largura</label><br>
+    <input type="number" id="largura"><br><br>
+
+    <label for="comprimento">Digite o valor do comprimento</label><br>
+    <input type="number" id="comprimento"><br><br>
+
+    <label for="altura">Digite o valor da altura</label><br>
+    <input type="number" id="altura"><br><br>
+    
+    <label for="tipo">Escolha o tipo</label><br>
+    <select name="tipo" id="tipo"><br><br>
+        <option value="capsula">cápsula</option>
+        <option value="tanque">tanque</option>
+    </select><br><br>
+
+    <button onclick="principal()">Calcular</button>
+    <div id="resposta"></div>
+
+</body>
+</html>
+

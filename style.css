@@ -1,0 +1,26 @@
+body{
+    color: rgb(255, 255, 255);
+    background-color: rgb(172, 127, 192);
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input{
+    background-color: rgb(133, 87, 153);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+select{
+    background-color: rgb(133, 87, 153);
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+button{
+    background-color: rgb(133, 87, 153);
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}

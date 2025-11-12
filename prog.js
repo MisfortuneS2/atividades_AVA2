@@ -43,15 +43,16 @@ function principal(){
     let custoTanque = 0, custoCapsula = 0
     let volTanque = 0, volCapsula = 0, volCili = 0, volEsfera = 0
 
+    resposta.innerHTML += ``
     if(tipo === 'capsula'){
         volCili = calcularVolCili(raio, alturaCili)
         volEsfera = calcularVolEsfera(raio)
         volCapsula = calcularVolCapsula(volCili, volEsfera)
         custoCapsula = verCustoCapsula(volCapsula, precoCap)
 
-        resposta.innerHTML += `O volume da cilindro é ${volCili.toFixed(2)}cm cúbicos.`
-        resposta.innerHTML += `O volume da esfera é ${volEsfera.toFixed(2)}cm cúbicos.`
-        resposta.innerHTML += `O volume da cápsula é ${volCapsula.toFixed(2)}cm cúbicos.`
+        resposta.innerHTML += `O volume da cilindro é ${volCili.toFixed(2)}cm cúbicos. <br>`
+        resposta.innerHTML += `O volume da esfera é ${volEsfera.toFixed(2)}cm cúbicos. <br>`
+        resposta.innerHTML += `O volume da cápsula é ${volCapsula.toFixed(2)}cm cúbicos. <br>`
         resposta.innerHTML += `O custo da cápsula de remédio é R$ ${custoCapsula.toFixed(2)}.`
         // let volCili = calcularVolCili(raio, pi)
         // let volEsfera = calcularVolEsfera(pi, raio)
@@ -62,9 +63,9 @@ function principal(){
         // console.log (`O custo total da cápsula é R$ ${custo.toFixed(2)}`)
     }else if(tipo === 'tanque'){
         volTanque = calcularVolRet(largura, altura, comprimento,)
-        custoTanque = verCustoTanque(calcularVolRet, precoRet)
-        resposta.innerHTML += `O volume do tanque é ${volTanque.toFixed(2)}m cúbicos.`
-        resposta.innerHTML += `O custo do tanque de remédio é R$ ${custoTanque.toFixed(2)}.`
+        custoTanque = verCustoTanque(volTanque, precoRet)
+        resposta.innerHTML += `O volume do tanque é ${volTanque.toFixed(2)}m cúbicos. <br>`
+        resposta.innerHTML += `O custo do tanque de remédio é R$ ${custoTanque.toFixed(2)}. <br>`
     }else{
         resposta.innerHTML += `tipo inválido, digite novamente.`
     // resposta.innerHTML = ``

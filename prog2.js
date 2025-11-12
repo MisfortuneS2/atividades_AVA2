@@ -41,9 +41,9 @@ function principal(){
         volCapsula = calcularVolCapsula(volCili, volEsfera)
         custoCapsula = verCustoCapsula(volCapsula, precoCap)
 
-        console.log (`O volume da cilindro é ${volCili.toFixed(2)}cm cúbicos.`)
-        console.log (`O volume da esfera é ${volEsfera.toFixed(2)}cm cúbicos.`)
-        console.log (`O volume da cápsula é ${volCapsula.toFixed(2)}cm cúbicos.`)
+        console.log (`O volume da cilindro é ${volCili.toFixed(2)}cm³.`)
+        console.log (`O volume da esfera é ${volEsfera.toFixed(2)}cm³.`)
+        console.log (`O volume da cápsula é ${volCapsula.toFixed(2)}cm³.`)
         console.log (`O custo da cápsula de remédio é R$ ${custoCapsula.toFixed(2)}.`)
         // let volCili = calcularVolCili(raio, pi)
         // let volEsfera = calcularVolEsfera(pi, raio)
@@ -55,7 +55,7 @@ function principal(){
     }else if(tipo === 'tanque'){
         volTanque = calcularVolRet(largura, altura, comprimento,)
         custoTanque = verCustoTanque(calcularVolRet, precoRet)
-        console.log (`O volume do tanque é ${volTanque.toFixed(2)}m cúbicos.`)
+        console.log (`O volume do tanque é ${volTanque.toFixed(2)}m³.`)
         console.log (`O custo do tanque de remédio é R$ ${custoTanque.toFixed(2)}.`)
     }else{
         console.log (`tipo inválido, digite novamente.`)

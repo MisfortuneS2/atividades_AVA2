@@ -50,9 +50,9 @@ function principal(){
         volCapsula = calcularVolCapsula(volCili, volEsfera)
         custoCapsula = verCustoCapsula(volCapsula, precoCap)
 
-        resposta.innerHTML += `O volume da cilindro é ${volCili.toFixed(2)}cm cúbicos. <br>`
-        resposta.innerHTML += `O volume da esfera é ${volEsfera.toFixed(2)}cm cúbicos. <br>`
-        resposta.innerHTML += `O volume da cápsula é ${volCapsula.toFixed(2)}cm cúbicos. <br>`
+        resposta.innerHTML += `O volume da cilindro é ${volCili.toFixed(2)}cm³. <br>`
+        resposta.innerHTML += `O volume da esfera é ${volEsfera.toFixed(2)}cm³. <br>`
+        resposta.innerHTML += `O volume da cápsula é ${volCapsula.toFixed(2)}cm³. <br>`
         resposta.innerHTML += `O custo da cápsula de remédio é R$ ${custoCapsula.toFixed(2)}.`
         // let volCili = calcularVolCili(raio, pi)
         // let volEsfera = calcularVolEsfera(pi, raio)
@@ -64,7 +64,7 @@ function principal(){
     }else if(tipo === 'tanque'){
         volTanque = calcularVolRet(largura, altura, comprimento,)
         custoTanque = verCustoTanque(volTanque, precoRet)
-        resposta.innerHTML += `O volume do tanque é ${volTanque.toFixed(2)}m cúbicos. <br>`
+        resposta.innerHTML += `O volume do tanque é ${volTanque.toFixed(2)}m³. <br>`
         resposta.innerHTML += `O custo do tanque de remédio é R$ ${custoTanque.toFixed(2)}. <br>`
     }else{
         resposta.innerHTML += `tipo inválido, digite novamente.`

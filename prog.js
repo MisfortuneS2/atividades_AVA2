@@ -43,7 +43,7 @@ function principal(){
     let custoTanque = 0, custoCapsula = 0
     let volTanque = 0, volCapsula = 0, volCili = 0, volEsfera = 0
 
-    resposta.innerHTML += ``
+    resposta.innerHTML = ``
     if(tipo === 'capsula'){
         volCili = calcularVolCili(raio, alturaCili)
         volEsfera = calcularVolEsfera(raio)
